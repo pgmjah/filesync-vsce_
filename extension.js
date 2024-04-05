@@ -28,7 +28,6 @@ class fsExtension extends EventEmitter
 
 		//start the outpus channel to show progress/status
 		this._outChan = vscode.window.createOutputChannel("FileSync Output");
-		this._outChan.show(true);
 
 		//add command for creating default config file.
 		vscode.commands.registerCommand("filesync.createConfigFile", this._onCreateConfigFile.bind(this));
